@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+.main-color {
+    color: #FF7A00;
+}
+
+.main-container {
+    width: 100%;
+    height: 400px;
+    background: url(assets/bg.png);
+    background-repeat: no-repeat;
+}
+
+.review-inner-card {
+    padding: 40px;
+    text-align: justify;
+}
+
+.user-info {
+    width: 30%;
+    margin-bottom: 10px;
+}
+
+.info-text {
+    font-size: 14px;
+}
+
+.info-icon .fas {
+    font-size: 14px;
+}
+
+/* -----------------------------------
+    Media Queries
+-------------------------------------- */
+
+/* Mobile Devices */
+@media only screen and (max-width:688px) {
+    .user-info {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
