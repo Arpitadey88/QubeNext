@@ -2,17 +2,98 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    color: #B9B9B9;
     font-family: "Poppins", sans-serif;
     box-sizing: border-box;
+    text-align: center;
 }
 
 .main-color {
     color: #FF7A00;
 }
 
+.parent-container {
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner-container {
+    margin: 0 auto;
+    box-sizing: border-box;
+    width: 1360px;
+    height: 780px;
+    border: 6px solid #FF0000;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+.box {
+    width: 37%;
+    height: 65px;
+    position: relative;
+}
+
+.box1 {
+    background: url(assets/btn2.png);
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+
+.box1-coner1 {
+    position: absolute;
+    right: 2px;
+    bottom: 1px;
+}
+
+.box1-coner2 {
+    position: absolute;
+    left: -1px;
+    top: 0px;
+}
+
+.box1-coner3 {
+    position: absolute;
+    right: 5px;
+    top: 3px;
+}
+
+
+.box2 {
+    background: url(assets/btn1.png);
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.box2-coner1 {
+    position: absolute;
+    right: 3px;
+    bottom: 2px;
+}
+
+.box2-coner2 {
+    position: absolute;
+    left: -1px;
+    top: 0px;
+}
+
+.box2-coner3 {
+    position: absolute;
+    right: 5px;
+    top: 1px;
+}
+
 .main-container {
-    width: 100%;
-    height: 400px;
+    /* width: 100%;
+    height: 340px; */
     background: url(assets/bg.png);
     background-repeat: no-repeat;
 }
@@ -35,12 +116,63 @@ body {
     font-size: 14px;
 }
 
+.text-container {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.main-content {
+    background: url(assets/small-bg.png);
+    background-repeat: no-repeat;
+    padding: 0 10px;
+
+}
+
+.review-content {
+    padding: 10px !important;
+    text-align: justify;
+}
+
+.user-info-content {
+    width: 30%;
+    margin-bottom: 5px;
+    font-size: 13px;
+
+}
+
+.info-text {
+    font-size: 14px;
+}
+
+.info-icon-content .fas {
+    font-size: 11px;
+
+}
+
+.text-content {
+    margin: 5px;
+    font-size: 13px;
+    font-weight: 400;
+}
+
 /* -----------------------------------
     Media Queries
 -------------------------------------- */
 
 /* Mobile Devices */
 @media only screen and (max-width:688px) {
+    .inner-container {
+        margin: 0 auto;
+        box-sizing: border-box;
+        height: 100%;
+        border: 6px solid #FF0000;
+    }
+
+    .button-container {
+        display: flex;
+        flex-direction: column;
+    }
+
     .user-info {
         width: 100%;
         margin-bottom: 10px;
